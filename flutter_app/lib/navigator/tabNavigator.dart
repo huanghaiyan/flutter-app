@@ -29,14 +29,14 @@ class _TabNavigatorState extends State<TabNavigator>{
         //pageview中使用一个controller
         controller: _controller,
         //禁用滚动事件
-        physics: NeverScrollableScrollPhysics(),
+//        physics: NeverScrollableScrollPhysics(),
         //处理页面切换时选中的页面
-//        onPageChanged:(index){
-//          _controller.jumpToPage(index);
-//          setState(() {
-//            _selectedIndex=index;
-//          });
-//        } ,
+        onPageChanged:(index){
+          _controller.jumpToPage(index);
+          setState(() {
+            _selectedIndex=index;
+          });
+        } ,
         //要显示的页面
         //需要显示“首页”、“加油”、“车友会”、“我的”
         children: <Widget>[
