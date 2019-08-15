@@ -13,7 +13,7 @@ class TabNavigator extends StatefulWidget{
 //在dart里面，如果要定义一个内部类，不能被外部访问的话，就可以以下划线开头
 class _TabNavigatorState extends State<TabNavigator>{
   final _defaultColor = Color(0xFF333333);
-  final _selectedColor = Color(0xFF333333);
+  final _selectedColor = Color(0xFFFFD91C);
   int _selectedIndex = 0;
 
   final PageController _controller = PageController(
@@ -48,6 +48,7 @@ class _TabNavigatorState extends State<TabNavigator>{
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
+          //设置导航栏的类型
           type: BottomNavigationBarType.fixed,
           onTap: (index){
             _controller.jumpToPage(index);

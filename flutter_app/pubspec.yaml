@@ -23,7 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-
+  flutter_swiper: ^1.1.6
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -50,7 +50,9 @@ flutter:
       - images/tabbar_forum_sel.png
       - images/tabbar_me.png
       - images/tabbar_me_sel.png
-
+      - images/default_icon.png
+      - images/car_1.png
+      - images/car_2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
