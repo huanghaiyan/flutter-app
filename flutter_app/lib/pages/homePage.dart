@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'mine_bank.dart';
+import 'recommend_friend.dart';
+
 class HomePage extends StatelessWidget {
   final List _imageUrls=[
     "http://pages.ctrip.com/commerce/promote/20180718/yxzy/img/640sygd.jpg",
@@ -21,6 +24,11 @@ class HomePage extends StatelessWidget {
               child: Swiper(
                 itemCount: _imageUrls.length,
                 autoplay: true,
+                onTap: (int index){
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => RecommendFriendPage()),
+                  );
+                },
                 itemBuilder: (BuildContext context, int index){
                   return Image.network(_imageUrls[index],fit:BoxFit.fill);
                 },

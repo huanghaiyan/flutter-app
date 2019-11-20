@@ -27,6 +27,9 @@ class ForumPage extends StatelessWidget {
                 },
                 //轮播图指示器
                 pagination: SwiperPagination(),
+                onTap: (int index){
+                  print("点击轮播图：$index");
+                },
               ),
             ),
             Expanded(

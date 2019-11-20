@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/homePage.dart';
-import 'package:flutter_app/pages/myPage.dart';
+import 'package:flutter_app/pages/mine_page.dart';
 import 'package:flutter_app/pages/oilPage.dart';
 import 'package:flutter_app/pages/forumPage.dart';
 
@@ -43,7 +43,7 @@ class _TabNavigatorState extends State<TabNavigator>{
           HomePage(),
           OilPage(),
           ForumPage(),
-          MyPage()
+          MinePage()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
